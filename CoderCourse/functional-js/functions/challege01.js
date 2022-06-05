@@ -26,7 +26,7 @@ const challengeSum = (a) => {
     return (b) => {
         return (c) => {
             return a + b + c;
-        } 
+        }
     }
 }
 
@@ -34,7 +34,6 @@ const challengeSumResult = challengeSum(3)(2)(2);
 console.log("Challenge 1: Sum Result: ", challengeSumResult);
 
 // Challenge 2
-
 const sum = (a, b) => a + b;
 const minus = (a, b) => a - b;
 const divide = (a, b) => a / b;
@@ -43,7 +42,7 @@ const multiply = (a, b) => a * b;
 const calculate = (a) => {
     return (b) => {
         return (fn) => {
-            return fn(a,b);
+            return fn(a, b);
         }
     }
 }
