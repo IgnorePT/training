@@ -17,3 +17,19 @@ const getProductTotalOnCart = product => product.qty * product.price
 const totalPerProduct = cart.map(getProductTotalOnCart);
 
 console.log(totalPerProduct);
+
+//Mine implementation of array.map
+
+Array.prototype.customMap = function(fn){
+    result = [];
+    for(var i = 0; i < this.length; i++){
+        result.push(fn(this[i], i, this));
+    }
+
+    return result;
+
+}
+
+const totalPerProductMine = cart.customMap(getProductName);
+
+console.log(totalPerProductMine)
