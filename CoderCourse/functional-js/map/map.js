@@ -27,7 +27,6 @@ Array.prototype.customMap = function(fn){
     }
 
     return result;
-
 }
 
 const totalPerProductMine = cart.customMap(getProductName);
